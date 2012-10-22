@@ -1,0 +1,37 @@
+#バックログ
+defscrollback 10000
+
+#ベル設定
+vbell on
+vbell_msg "bell!"
+
+#デタッチ
+autodetach on
+
+#著作権表示しない
+startup_message off
+
+#文字コード
+defutf8 on
+defencoding utf-8
+defkanji utf-8
+encoding utf-8 utf-8
+
+#エスケープ
+escape ^z^z
+
+#ターミナル
+defbce "on"
+term xterm-256color
+termcaptnfo xterm-256color 'is=rmJH?7h?1;4;6|'
+
+#ステートライン
+hardstatus alwayslastline "%{=wk} %-w%{=bu dr}%n %t%{-}%+w %= %{b wb}%Y/%m/%d %{=b wb}%c:%s"
+
+#リサイズ
+bind r eval 'echo "Resize window"' 'command -c resize'
+bind -c resize ^] command
+bind -c resize n eval 'resize -v +1' 'command -c resize'
+bind -c resize p eval 'resize -v -1' 'command -c resize'
+bind -c resize f eval 'resize -h +1' 'command -c resize'
+bind -c resize b eval 'resize -h -1' 'command -c resize'

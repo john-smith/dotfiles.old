@@ -1,0 +1,12 @@
+alias ls ls -G $*
+alias la ls -aG $*
+alias ll ls -alG $*
+alias mkdir mkdir -p $*
+alias rf rm -rf $*
+alias rm rm -ri $*
+alias rmdir rm -rf $*
+alias rmsvn rm -rf `find . -type d -name .svn`
+alias cp cp -aR $1 $2
+alias ff find-file-other-window $1
+alias emacs find-file-other-window $1
+alias r rails $*
