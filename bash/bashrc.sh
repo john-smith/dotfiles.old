@@ -8,6 +8,7 @@ fi
 
 # User specific aliases and functions
 
+PATH=/usr/local/bin:$PATH
 PATH=$PATH:$HOME/bin
 export PATH
 
