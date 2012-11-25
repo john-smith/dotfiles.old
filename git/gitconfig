@@ -1,3 +1,12 @@
 [user]
 	name = John Smith
 	email = wakai.hirofumi@gmail.com
+[alias]
+	co = checkout
+	st = status
+	ci = commit -m
+	ca = commit -a -m
+	br = branch
+	push = push --no-ff
+[color]
+	ui = auto
