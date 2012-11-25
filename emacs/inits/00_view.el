@@ -42,6 +42,11 @@
 (setq default-truncate-lines t)
 (setq truncate-partial-width-windows nil)
 
+;時間表時
+(setq display-time-day-and-date t)
+(setq display-time-24hr-format t)
+(display-time-mode t)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;color
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
