@@ -7,7 +7,6 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
-
 PATH=/usr/local/bin:$PATH
 PATH=$PATH:$HOME/bin
 export PATH
@@ -27,16 +26,20 @@ alias screen='screen -UxR'
 alias rmsvn='rm -rf `find . -type d -name .svn`'
 alias cp='cp -aR'
 
-#alias list='ls -1G'
-#alias lista='ls -1Ga'
-
 export SCREENDIR=$HOME/.screen
 export EDITOR=emacs
 
 #settings for mac
-alias eclipse='open -a eclipse'
-alias chrome='open -a Google\ Chrome'
+if [ -e /usr/bin/open ]; then
+	alias eclipse='open -a eclipse'
+	alias chrome='open -a Google\ Chrome'
 
-alias umount='sudo diskutil umount'
+	alias umount='sudo diskutil umount'
 
-alias mysql.server='sudo /opt/local/share/mysql5/mysql/mysql.server'
+	#alias mysql.server='sudo /opt/local/share/mysql5/mysql/mysql.server'
+fi
+
+#other settings
+if [ -e /usr/local/bin/rbenv ]; then
+	eval "$(rbenv init -)"
+fi
