@@ -1,19 +1,4 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;言語設定
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;(set-locale-environment nil)
-;(set-language-environment "Japanese")
-;;for mac
-;(require 'ucs-normalize)
-;(prefer-coding-system 'utf-8-hfs)
-;(setq file-name-coding-system 'utf-8-hfs)
-;(setq locale-coding-system 'utf-8-hfs)
-;;for other
-;(prefer-coding-system 'utf-8)
-;(setq file-name-coding-system 'utf-8)
-;(setq locale-coding-system 'utf-8)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;キーバインド
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key "\C-h" 'delete-backward-char)
@@ -44,12 +29,13 @@
 
 ;yes or no ではなく y or n　
 (fset 'yes-or-no-p 'y-or-n-p)
+
 (auto-compression-mode t)
 (delete-selection-mode 1)
-;(auto-image-file-mode t)
-;(display-time)
 (setq vc-follow-symlinks t)
+
 ;bookmarkをセットする
 (global-set-key "C-cb" 'bookmark-set)
+
 ;read-onlyなバッファの内容もkill-ringに入れれるようにする
 (setq kill-read-only-ok t)

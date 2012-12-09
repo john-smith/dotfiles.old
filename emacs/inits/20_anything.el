@@ -44,5 +44,3 @@
 	(interactive)
 	(anything anything-for-document-sources
 		(thing-at-point 'symbol) nil nil nil "*anything for document*"))
-
-(global-set-key "\C-x\C-f" 'anything-find-file)

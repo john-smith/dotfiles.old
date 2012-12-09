@@ -12,8 +12,6 @@
 (setq eshell-prompt-regexp "^[^#$]*[$#] ")
 (add-hook 'eshell-mode-hook
 		  '(lambda()
-;			 (line-number-mode nil)
-;			 (column-number-mode nil)
 			 (setq truncate-lines nil)
 			 (define-key eshell-mode-map "\C-a" 'eshell-bol)
 			 (define-key (current-local-map) "\C-c\C-w" nil)))
