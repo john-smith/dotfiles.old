@@ -10,3 +10,4 @@ alias cp cp -aR $1 $2
 alias ff find-file-other-window $1
 alias emacs find-file-other-window $1
 alias r rails $*
+alias diff diff -ub $*

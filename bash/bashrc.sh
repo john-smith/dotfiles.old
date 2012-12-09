@@ -25,6 +25,8 @@ alias screenls='screen -ls'
 alias screen='screen -UxR'
 alias rmsvn='rm -rf `find . -type d -name .svn`'
 alias cp='cp -aR'
+alias diff='diff -ub'
+alias r='rails'
 
 export SCREENDIR=$HOME/.screen
 export EDITOR=emacs
