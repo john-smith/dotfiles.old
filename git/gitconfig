@@ -8,5 +8,6 @@
 	ca = commit -a -m
 	br = branch
 	push = push --no-ff
+	commit = commit -m
 [color]
 	ui = auto
