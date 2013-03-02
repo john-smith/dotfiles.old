@@ -9,6 +9,5 @@
 	br = branch
 	me = merge
 	mn = merge --no-ff
-	commit = commit -m
 [color]
 	ui = auto
