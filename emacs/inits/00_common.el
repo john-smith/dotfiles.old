@@ -11,6 +11,8 @@
 (global-set-key "\C-xv" 'shrink-window)
 (global-set-key "\C-x\C-f" 'find-file-other-window)
 (global-set-key "\C-xd" 'dired-other-window)
+(global-set-key "\C-cf" 'find-file)
+(global-set-key "\C-cd" 'dired)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;フィアルの自動バックアップ
