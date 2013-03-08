@@ -12,6 +12,5 @@ alias fo find-file-other-window $1
 alias emacs find-file-other-window $1
 alias r rails $*
 alias diff diff -ub $*
-alias do dired $1
+alias d dired $1
 alias do dired-other-window $1
-

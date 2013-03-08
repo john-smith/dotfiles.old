@@ -2,7 +2,7 @@
 ;;キーバインド
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key "\C-h" 'delete-backward-char)
-(global-set-key "\C-x \C-h" 'help-command)
+(global-set-key "\C-x\C-h" 'help-command)
 (global-set-key "\M-k" 'kill-this-buffer)
 (global-set-key "\C-t" 'other-window)
 (global-set-key "\C-cj" 'goto-line)
