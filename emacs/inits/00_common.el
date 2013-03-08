@@ -27,9 +27,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;改行まで消す
 ;(setq kill-whole-line t)
-
-;autorevert
+;auto revert
 (global-auto-revert-mode t)
+
+;emacs server
+(server-start)
 
 ;yes or no ではなく y or n　
 (fset 'yes-or-no-p 'y-or-n-p)

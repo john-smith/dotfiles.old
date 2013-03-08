@@ -27,9 +27,10 @@ alias rmsvn='rm -rf `find . -type d -name .svn`'
 alias cp='cp -aR'
 alias diff='diff -ub'
 alias r='rails'
+alias e='emacsclient'
 
 export SCREENDIR=$HOME/.screen
-export EDITOR=emacs
+export EDITOR=emacsclient
 
 #settings for mac
 if [ -e /usr/bin/open ]; then
