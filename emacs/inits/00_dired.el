@@ -56,12 +56,10 @@
   (dired-map-over-marks-check
    (function dired-convert-coding-system) arg 'convert-coding-system t))
 
-
 (require 'popwin)
 (setq display-buffer-function 'popwin:display-buffer)
 
 (require 'direx)
-(global-set-key "\C-x\C-j" 'direx:jump-to-directory-other-window)
-(global-set-key "\C-c\C-j" 'direx:jump-to-directory)
+(global-set-key "\C-x\C-j" 'direx:find-directory-other-window)
 (push '(direx:direx-mode :position left :width 25 :dedicated t)
       popwin:special-display-config)
