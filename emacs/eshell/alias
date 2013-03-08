@@ -7,7 +7,11 @@ alias rm rm -ri $*
 alias rmdir rm -rf $*
 alias rmsvn rm -rf `find . -type d -name .svn`
 alias cp cp -aR $1 $2
-alias ff find-file-other-window $1
+alias ff find-file $1
+alias fo find-file-other-window $1
 alias emacs find-file-other-window $1
 alias r rails $*
 alias diff diff -ub $*
+alias do dired $1
+alias do dired-other-window $1
+
