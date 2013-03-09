@@ -29,11 +29,6 @@ alias diff='diff -ub'
 alias r='rails'
 alias e='emacsclient'
 
-# 起動してないときだけemacs
-if  [ `ps -ax | grep emacs | wc -l` != 2 ];then
-	emacs
-fi
-
 export SCREENDIR=$HOME/.screen
 export EDITOR=emacsclient
 export VISUAL=emacsclient
@@ -51,4 +46,9 @@ fi
 #other settings
 if [ -e /usr/local/bin/rbenv ]; then
 	eval "$(rbenv init -)"
+fi
+
+# 起動してないときだけemacs
+if  [ `ps -ax | grep emacs | wc -l` != 2 ];then
+	emacs
 fi
