@@ -4,8 +4,8 @@
 [alias]
 	co = checkout
 	st = status
-	ci = commit -m
-	ca = commit -a -m
+	ci = commit
+	ca = commit -a
 	br = branch
 	me = merge
 	mn = merge --no-ff
