@@ -3,7 +3,10 @@
   (interactive)
   (if (y-or-n-p "quit emacs? ")
 	  (save-buffers-kill-emacs)))
-(global-set-key "\C-x\C-c" 'my-save-buffers-kill-emacs)
+;(global-set-key "\C-x\C-c" 'my-save-buffers-kill-emacs)
+(global-set-key "\C-x\C-c" 'server-edit)
+(defalias 'exit 'my-save-buffers-kill-emacs)
+
 
 (defun kill-hook-func()
   (interactive)
