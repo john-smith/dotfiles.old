@@ -5,7 +5,6 @@
 	  (save-buffers-kill-emacs)))
 ;(global-set-key "\C-x\C-c" 'my-save-buffers-kill-emacs)
 (global-set-key "\C-x\C-c" 'delete-frame)
-(global-set-key "\C-c\C-c" 'server-edit)
 (defalias 'exit 'my-save-buffers-kill-emacs)
 
 
