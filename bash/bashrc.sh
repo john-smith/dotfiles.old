@@ -28,6 +28,8 @@ alias cp='cp -aR'
 alias diff='diff -ub'
 alias r='rails'
 alias e='emacsclient'
+alias em='emacsclient -nw'
+alias en='emacsclient -n'
 
 export SCREENDIR=$HOME/.screen
 export EDITOR=emacsclient
