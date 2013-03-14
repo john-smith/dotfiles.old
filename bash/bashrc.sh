@@ -32,8 +32,8 @@ alias em='emacsclient -nw'
 alias en='emacsclient -n'
 
 export SCREENDIR=$HOME/.screen
-export EDITOR=emacsclient
-export VISUAL=emacsclient
+export EDITOR='emacsclient -nw'
+export VISUAL='emacsclient -nw'
 
 #settings for mac
 if [ -e /usr/bin/open ]; then
