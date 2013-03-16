@@ -53,6 +53,7 @@ fi
 alias e='emacsclient -nw'
 alias em='emacsclient'
 alias en='emacsclient -n'
+#alias ekill="emacsclient -e '(kill-emacs)'"
 alias emacs='emacsclient -nw'
 
 export EDITOR='emacsclient -nw'
