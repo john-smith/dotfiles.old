@@ -48,8 +48,6 @@ fi
 # 起動してないときだけemacs
 if  [ `ps -ax | grep emacs | wc -l` = 1 ];then
 	emacs
-else
-	alias emacs='emacsclient -nw'
 fi
 
 alias e='emacsclient -nw'

@@ -31,7 +31,8 @@
 (global-auto-revert-mode t)
 
 ;emacs server
-(server-start)
+(require 'server)
+(unless (server-running-p) (server-start))
 
 ;yes or no ではなく y or n　
 (fset 'yes-or-no-p 'y-or-n-p)
