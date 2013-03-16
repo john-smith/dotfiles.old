@@ -7,12 +7,10 @@
 (global-set-key "\C-x\C-c" 'delete-frame)
 (defalias 'exit 'my-save-buffers-kill-emacs)
 
-
 (defun kill-hook-func()
   (interactive)
   (save-current-configuration))
 
 (add-hook 'kill-emacs-hook
   '(lambda()
-	 (kill-hook-func)
-))
+	 (kill-hook-func)))
