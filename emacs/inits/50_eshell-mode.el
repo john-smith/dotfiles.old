@@ -19,3 +19,4 @@
 ;; Emacs起動時にEshellを起動
 (add-hook 'after-init-hook (lambda() (eshell) ))
 (setenv "EDITOR" "emacsclient")
+(setenv "VISUAL" "emacsclient")

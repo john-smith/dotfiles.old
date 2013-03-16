@@ -48,13 +48,14 @@ fi
 # 起動してないときだけemacs
 if  [ `ps -ax | grep emacs | wc -l` = 1 ];then
 	emacs
+else
+	alias emacs='emacsclient -nw'
 fi
 
 alias e='emacsclient -nw'
 alias em='emacsclient'
 alias en='emacsclient -n'
 #alias ekill="emacsclient -e '(kill-emacs)'"
-alias emacs='emacsclient -nw'
 
 export EDITOR='emacsclient -nw'
 export VISUAL='emacsclient -nw'
