@@ -30,10 +30,11 @@ alias r='rails'
 alias e='emacsclient'
 alias em='emacsclient -nw'
 alias en='emacsclient -n'
+alias ekill="emacsclient -e '(kill-emacs)'"
 
 export SCREENDIR=$HOME/.screen
-export EDITOR='emacsclient'
-export VISUAL='emacsclient'
+export EDITOR='emacsclient -nw'
+export VISUAL='emacsclient -nw'
 
 #settings for mac
 if [ -e /usr/bin/open ]; then
@@ -51,6 +52,8 @@ if [ -e /usr/local/bin/rbenv ]; then
 fi
 
 # 起動してないときだけemacs
-if  [ `ps -ax | grep emacs | wc -l` != 2 ];then
+if  [ `ps -ax | grep emacs | wc -l` = 1 ];then
 	emacs
 fi
+
+alias emacs='emacsclient -nw'
