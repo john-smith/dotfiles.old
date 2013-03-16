@@ -33,8 +33,6 @@ alias en='emacsclient -n'
 alias ekill="emacsclient -e '(kill-emacs)'"
 
 export SCREENDIR=$HOME/.screen
-export EDITOR='emacsclient -nw'
-export VISUAL='emacsclient -nw'
 
 #settings for mac
 if [ -e /usr/bin/open ]; then
@@ -57,3 +55,5 @@ if  [ `ps -ax | grep emacs | wc -l` = 1 ];then
 fi
 
 alias emacs='emacsclient -nw'
+export EDITOR='emacsclient -nw'
+export VISUAL='emacsclient -nw'
