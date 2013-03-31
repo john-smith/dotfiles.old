@@ -7,7 +7,7 @@
 (global-set-key "\C-c\C-s" 'save-current-configuration)
 (global-set-key "\C-c\C-k" 'wipe)
 (resume)
-(run-with-idle-timer 900 t 'save-current-configuration)
+;(run-with-idle-timer 900 t 'save-current-configuration)
 
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
