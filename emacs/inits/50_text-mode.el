@@ -5,6 +5,6 @@
 
 (add-hook 'text-mode-hook
 	'(lambda ()
-	   (turn-on-auto-fill)
+	   (turn-off-auto-fill)
 	   (local-set-key "\t" 'self-insert-command)
 ))
