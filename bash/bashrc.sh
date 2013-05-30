@@ -46,9 +46,9 @@ if [ -e /usr/local/bin/rbenv ]; then
 fi
 
 # 起動してないときだけemacs
-if  [ `ps -ax | grep emacs | wc -l` = 1 ];then
-	emacs
-fi
+#if  [ `ps -ax | grep emacs | wc -l` = 1 ];then
+#	emacs
+#fi
 
 alias e='emacsclient -nw'
 alias em='emacsclient'
