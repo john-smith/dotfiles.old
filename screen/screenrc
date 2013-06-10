@@ -24,6 +24,7 @@ escape ^z^z
 defbce "on"
 term xterm-256color
 termcaptnfo xterm-256color 'is=rmJH?7h?1;4;6|'
+termcapinfo  xterm 'is=^[r^[m^[2J^[H^[?7h^[?1;4;6l'
 
 #ステートライン
 hardstatus alwayslastline "%{=wk} %-w%{=bu dr}%n %t%{-}%+w %= %{b wb}%Y/%m/%d %{=b wb}%c:%s"
