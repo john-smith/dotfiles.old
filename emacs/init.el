@@ -5,6 +5,7 @@
     (expand-file-name "~/dotfiles/emacs/elisp/")
     (expand-file-name "~/dotfiles/emacs/auto-install/")
     (expand-file-name "~/dotfiles/emacs/elisp/tramp")
+	(expand-file-name "~/dotfiles/emacs/elisp/ess/lisp")
    ) load-path))
 
 ;;;設定ファイルを読み込む
