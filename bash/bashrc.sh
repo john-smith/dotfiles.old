@@ -57,3 +57,5 @@ alias en='emacsclient -n'
 
 export EDITOR='emacsclient -nw'
 export VISUAL='emacsclient -nw'
+
+export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
