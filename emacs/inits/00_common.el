@@ -9,10 +9,12 @@
 (global-set-key "\M-p" 'scroll-down)
 (global-set-key "\M-n" 'scroll-up)
 (global-set-key "\C-xv" 'shrink-window)
-(global-set-key "\C-x\C-f" 'find-file-other-window)
-(global-set-key "\C-xd" 'dired-other-window)
-(global-set-key "\C-cf" 'find-file)
-(global-set-key "\C-cd" 'dired)
+;(global-set-key "\C-x\C-f" 'find-file-other-window)
+;(global-set-key "\C-xd" 'dired-other-window)
+;(global-set-key "\C-cf" 'find-file)
+;(global-set-key "\C-cd" 'dired)
+(global-set-key "\C-cf" 'find-file-other-window)
+(global-set-key "\C-cd" 'dired-other-window)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;フィアルの自動バックアップ
