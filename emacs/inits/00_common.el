@@ -15,6 +15,8 @@
 ;(global-set-key "\C-cd" 'dired)
 (global-set-key "\C-cf" 'find-file-other-window)
 (global-set-key "\C-cd" 'dired-other-window)
+(global-set-key "\C-a" 'back-to-indentation)
+(global-set-key "\M-m" 'move-beginning-of-line)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;フィアルの自動バックアップ
