@@ -28,7 +28,7 @@ alias rmsvn='rm -rf `find . -type d -name .svn`'
 alias cp='cp -aR'
 alias diff='diff -ub'
 alias r='rails'
-
+alias ssh='ssh -A'
 export SCREENDIR=$HOME/.screen
 
 #settings for mac
