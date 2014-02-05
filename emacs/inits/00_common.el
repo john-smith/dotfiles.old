@@ -15,8 +15,12 @@
 ;(global-set-key "\C-cd" 'dired)
 (global-set-key "\C-cf" 'find-file-other-window)
 (global-set-key "\C-cd" 'dired-other-window)
-(global-set-key "\C-a" 'back-to-indentation)
-(global-set-key "\M-m" 'move-beginning-of-line)
+
+(defun back-to-indentation-or-beginning ()
+   (interactive) 
+   (if (bolp) (back-to-indentation) (beginning-of-line)))
+(global-set-key "\C-a" 'back-to-indentation-or-beginning)
+(global-set-key "\M-m" 'back-to-indentation-or-beginning)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;フィアルの自動バックアップ
