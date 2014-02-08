@@ -8,6 +8,7 @@ rm -rf ~/.screenrc
 rm -rf ~/.screen
 rm -rf ~/.eshell/alias
 rm -rf ~/.gitconfig
+rm -rf ~/.Rprofile
 
 if [ ! -d ~/.emacs.d ]; then
 	mkdir ~/.emacs.d
@@ -26,6 +27,7 @@ ln -s ~/dotfiles/bash/bash_profile.sh ~/.bash_profile
 ln -s ~/dotfiles/screen/screenrc ~/.screenrc
 ln -s ~/dotfiles/emacs/eshell/alias ~/.eshell/alias
 ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
+ln -s ~/dotfiles/R/Rprofile ~/.Rprofile
 
 sh ~/.bash_profile
 
