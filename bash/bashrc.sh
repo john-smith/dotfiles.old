@@ -61,3 +61,10 @@ export EDITOR='emacsclient -nw'
 export VISUAL='emacsclient -nw'
 
 export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
+
+if [ ! -r "$HOME/.ssh/auth_sock" ] ; then
+ if [ "$SSH_AUTH_SOCK" -a "$SSH_AUTH_SOCK" != "$HOME/.ssh/auth_sock" ]; then
+  ln -fs $SSH_AUTH_SOCK $HOME/.ssh/auth_sock
+ fi
+fi
+export SSH_AUTH_SOCK=$HOME/.ssh/auth_sock
