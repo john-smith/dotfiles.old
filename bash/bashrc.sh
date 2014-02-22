@@ -67,3 +67,6 @@ if [ "$SSH_AUTH_SOCK" -a "$SSH_AUTH_SOCK" != "$HOME/.ssh/auth_sock" ]; then
 	ln -fs $SSH_AUTH_SOCK $HOME/.ssh/auth_sock
 fi
 export SSH_AUTH_SOCK=$HOME/.ssh/auth_sock
+
+#Mac以外でrsrubyを使う場合は変える
+export R_HOME=/Library/Frameworks/R.framework/Resources
