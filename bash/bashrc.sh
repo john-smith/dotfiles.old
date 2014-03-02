@@ -16,7 +16,7 @@ export PS1
 
 alias ls='ls -G'
 alias la='ls -aG'
-alias ll='ls -alGh'
+alias ll='ls -alG -h'
 alias l1='ls -1G'
 alias mkdir='mkdir -p'
 alias rf='rm -rf'
