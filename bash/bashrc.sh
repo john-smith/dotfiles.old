@@ -16,7 +16,7 @@ export PS1
 
 alias ls='ls -G'
 alias la='ls -aG'
-alias ll='ls -alGh'
+alias ll='ls -alG -h'
 alias l1='ls -1G'
 alias mkdir='mkdir -p'
 alias rf='rm -rf'
@@ -52,10 +52,9 @@ fi
 #	emacs
 #fi
 
-alias e='emacsclient -nw'
-alias em='emacsclient'
+alias e='emacsclient -t'
 alias en='emacsclient -n'
-#alias ekill="emacsclient -e '(kill-emacs)'"
+alias ekill="emacsclient -e '(kill-emacs)'"
 
 export EDITOR='emacsclient -nw'
 export VISUAL='emacsclient -nw'
@@ -70,3 +69,7 @@ export SSH_AUTH_SOCK=$HOME/.ssh/auth_sock
 
 #Mac以外でrsrubyを使う場合は変える
 export R_HOME=/Library/Frameworks/R.framework/Resources
+
+if [ `ps ax | grep emacs | grep -v grep | wc -l` -eq 0 ]; then
+  emacs --daemon
+fi
