@@ -70,6 +70,10 @@ export SSH_AUTH_SOCK=$HOME/.ssh/auth_sock
 #Mac以外でrsrubyを使う場合は変える
 export R_HOME=/Library/Frameworks/R.framework/Resources
 
+if [ ! -e ~/.emacs.d/kill-ring-saved.el ]; then
+	touch ~/.emacs.d/kill-ring-saved.el
+fi
+
 if [ `ps ax | grep emacs | grep -v grep | wc -l` -eq 0 ]; then
   emacs --daemon
 fi
